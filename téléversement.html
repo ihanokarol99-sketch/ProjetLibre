@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil AI - Importer mon CV</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Profil <span>AI</span></h2>
+
+            <ul class="menu">
+                <li>
+                    <a href="accueil.html">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="upload.html">Importer un CV</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="upload-page">
+
+        <section class="upload-section">
+
+            <h1>Importez votre CV</h1>
+
+            <p class="upload-description">
+                Commencez votre analyse intelligente en
+                téléversant votre CV au format PDF.
+            </p>
+
+            <div class="upload-card">
+
+                <div class="upload-icon">📤</div>
+
+                <h2>Sélectionnez votre CV</h2>
+
+                <p>
+                    Choisissez votre CV pour découvrir
+                    les conseils de Profil AI.
+                </p>
+
+                <!-- ZONE DE TÉLÉVERSEMENT -->
+                <div class="upload-zone">
+
+                    <div class="pdf-icon">📄</div>
+
+                    <p id="file-name">
+                        Aucun fichier sélectionné
+                    </p>
+
+                    <label for="cv-file" class="btn">
+                        Choisir un fichier
+                    </label>
+
+                    <input
+                        type="file"
+                        id="cv-file"
+                        accept=".pdf,application/pdf"
+                        hidden
+                    >
+
+                </div>
+
+                <p class="file-info">
+                    PDF uniquement - Taille maximale : 5 Mo
+                </p>
+
+                <!-- MESSAGE DE VALIDATION -->
+                <p id="file-message"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <!-- BOUTON CONTINUER -->
+                <button
+                    id="continue-btn"
+                    class="btn continue-btn"
+                    type="button"
+                    disabled>
+                    Continuer vers le questionnaire
+                </button>
+
+                <p class="privacy-info">
+                    🔒 Votre CV sera utilisé uniquement
+                    pour l'analyse demandée.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>
+            &copy; 2026 Profil AI - Projet universitaire
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT EXTERNE -->
+    <script src="js/upload.js"></script>
+
+</body>
+</html>

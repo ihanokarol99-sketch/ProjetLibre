@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profil AI - Analyse du CV</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">
+                Profil <span>AI</span>
+            </h2>
+
+            <ul class="menu">
+                <li>
+                    <a href="accueil.html">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="téléversement.html">Importer un CV</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- PAGE D'ANALYSE -->
+    <main class="analyse-page">
+
+        <section class="analyse-section">
+
+            <h1>Analyse de votre CV</h1>
+
+            <p class="analyse-description">
+                Découvrez les points forts de votre CV
+                et les éléments à améliorer.
+            </p>
+
+            <p class="analyse-demo">
+                Mode démonstration :
+                résultats fictifs, sans analyse IA.
+            </p>
+
+            <!-- RÉSUMÉ DU PROFIL -->
+            <div class="analyse-card">
+
+                <h2>Votre profil professionnel</h2>
+
+                <p>
+                    <strong>Poste recherché :</strong>
+                    <span id="resultat-poste">
+                        Non renseigné
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Expérience :</strong>
+                    <span id="resultat-experience">
+                        Non renseignée
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Secteur :</strong>
+                    <span id="resultat-secteur">
+                        Non renseigné
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Pays :</strong>
+                    <span id="resultat-pays">
+                        Non renseigné
+                    </span>
+                </p>
+
+            </div>
+
+            <!-- INDICATEURS FICTIFS -->
+            <div class="analyse-card">
+
+                <h2>Évaluation illustrative du CV</h2>
+
+                <div class="analyse-score">
+
+                    <p>Présentation du CV : 80 %</p>
+
+                    <div class="progression">
+                        <div class="barre barre-verte"></div>
+                    </div>
+
+                </div>
+
+                <div class="analyse-score">
+
+                    <p>Clarté du contenu : 65 %</p>
+
+                    <div class="progression">
+                        <div class="barre barre-clarte"></div>
+                    </div>
+
+                </div>
+
+                <p class="score-note">
+                    Ces valeurs sont des exemples.
+                    Elles ne représentent pas une
+                    évaluation réelle du CV.
+                </p>
+
+            </div>
+
+            <!-- POINTS FORTS ET FAIBLES -->
+            <div class="analyse-columns">
+
+                <article class="analyse-card">
+
+                    <h2>✅ Points forts</h2>
+
+                    <ul>
+                        <li>Structure claire du CV</li>
+                        <li>Compétences bien présentées</li>
+                        <li>Expériences organisées</li>
+                    </ul>
+
+                </article>
+
+                <article class="analyse-card">
+
+                    <h2>⚠️ Points à améliorer</h2>
+
+                    <ul>
+                        <li>Préciser les réalisations</li>
+                        <li>Adapter le résumé professionnel</li>
+                        <li>Valoriser les projets pertinents</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+            <!-- REFORMULATION -->
+            <div class="analyse-card">
+
+                <h2>💡 Suggestion de reformulation</h2>
+
+                <p><strong>Avant :</strong></p>
+
+                <p class="texte-avant">
+                    Connaissances en informatique.
+                </p>
+
+                <p><strong>Après :</strong></p>
+
+                <p class="texte-apres">
+                    Compétences en administration
+                    de systèmes et diagnostic réseau.
+                </p>
+
+                <p class="score-note">
+                    Exemple fictif : cette reformulation
+                    doit correspondre aux compétences
+                    réelles du candidat.
+                </p>
+
+            </div>
+
+            <!-- BOUTONS -->
+            <div class="analyse-buttons">
+
+                <a href="questionnaire.html"
+                   class="btn retour-btn">
+                    Retour au questionnaire
+                </a>
+
+                <a href="carriere.html"
+                   class="btn">
+                    Voir mes conseils de carrière
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>
+            &copy; 2026 Profil AI - Projet universitaire
+        </p>
+    </footer>
+
+    <script src="js/analyse.js"></script>
+
+</body>
+</html>

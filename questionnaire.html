@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profil AI - Questionnaire</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Profil <span>AI</span></h2>
+
+            <ul class="menu">
+                <li>
+                    <a href="accueil.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="téléversement.html">Importer un CV</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- QUESTIONNAIRE -->
+    <main class="questionnaire-page">
+
+        <section class="questionnaire-section">
+
+            <h1>Votre profil professionnel</h1>
+
+            <p class="questionnaire-description">
+                Répondez aux questions suivantes pour
+                recevoir une analyse personnalisée
+                et des conseils de carrière.
+            </p>
+
+            <form id="questionnaire-form"
+                  class="questionnaire-card">
+
+                <!-- QUESTION 1 -->
+                <div class="question">
+                    <label for="poste">
+                        1. Quel poste recherchez-vous ?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="poste"
+                        placeholder="Ex. : Analyste cybersécurité"
+                        required>
+                </div>
+
+                <!-- QUESTION 2 -->
+                <div class="question">
+                    <label for="experience">
+                        2. Quel est votre niveau d'expérience ?
+                    </label>
+
+                    <select id="experience" required>
+                        <option value="">
+                            Sélectionnez une réponse
+                        </option>
+                        <option value="Débutant">
+                            Débutant
+                        </option>
+                        <option value="1 à 3 ans">
+                            1 à 3 ans
+                        </option>
+                        <option value="4 à 7 ans">
+                            4 à 7 ans
+                        </option>
+                        <option value="Plus de 7 ans">
+                            Plus de 7 ans
+                        </option>
+                    </select>
+                </div>
+
+                <!-- QUESTION 3 -->
+                <div class="question">
+                    <label for="secteur">
+                        3. Quel secteur vous intéresse ?
+                    </label>
+
+                    <select id="secteur" required>
+                        <option value="">
+                            Sélectionnez un secteur
+                        </option>
+                        <option>Informatique</option>
+                        <option>Finance</option>
+                        <option>Santé</option>
+                        <option>Ingénierie</option>
+                        <option>Commerce</option>
+                        <option>Éducation</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+
+                <!-- QUESTION 4 -->
+                <div class="question">
+                    <label for="objectif">
+                        4. Quel est votre objectif principal ?
+                    </label>
+
+                    <select id="objectif" required>
+                        <option value="">
+                            Sélectionnez un objectif
+                        </option>
+                        <option>Trouver un premier emploi</option>
+                        <option>Changer de carrière</option>
+                        <option>Obtenir une promotion</option>
+                        <option>Améliorer mon CV</option>
+                    </select>
+                </div>
+
+                <!-- QUESTION 5 -->
+                <fieldset class="question">
+                    <legend>
+                        5. Êtes-vous prêt à suivre une formation ?
+                    </legend>
+
+                    <div class="radio-options">
+
+                        <label>
+                            <input type="radio"
+                                   name="formation"
+                                   value="Oui"
+                                   required>
+                            Oui
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="formation"
+                                   value="Non">
+                            Non
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="formation"
+                                   value="Peut-être">
+                            Peut-être
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <!-- QUESTION 6 -->
+                <div class="question">
+                    <label for="pays">
+                        6. Dans quel pays recherchez-vous
+                        un emploi ?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pays"
+                        placeholder="Ex. : Canada"
+                        required>
+                </div>
+
+                <!-- MESSAGE -->
+                <p id="questionnaire-message"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <!-- BOUTONS -->
+                <div class="questionnaire-buttons">
+
+                    <a href="téléversement.html"
+                       class="btn retour-btn">
+                        Retour
+                    </a>
+
+                    <button type="submit"
+                            class="btn analyser-btn">
+                        Analyser mon profil
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>
+            &copy; 2026 Profil AI - Projet universitaire
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT EXTERNE -->
+    <script src="js/questionnaire.js"></script>
+
+</body>
+</html>
